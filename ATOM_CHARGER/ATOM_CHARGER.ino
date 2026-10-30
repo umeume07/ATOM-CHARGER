@@ -9,7 +9,7 @@
 M5AtomicMotion motion;
 constexpr int SDA_PIN=38, SCL_PIN=39;
 constexpr float DEAD_BAND_A=0.025f;
-constexpr int CHARGING_CURRENT_SIGN=1; // Change to -1 if charge current is negative.
+constexpr int CHARGING_CURRENT_SIGN=-1; // Verified: charging current is negative on this hardware.
 uint32_t lastUpdate=0;
 bool connected=false;
 
